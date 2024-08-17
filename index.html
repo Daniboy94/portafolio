@@ -49,7 +49,7 @@
         </div>
 
         <h1>DANIEL FAMIGLIETTI</h1>
-        <h2>Desarrollador Web Full Stack</h2>
+        <h2>Técnico Superior en Desarrollo de Aplicaciones Web</h2>
         <div class="redes">
           <a
             href="https://www.linkedin.com/in/daniel-famiglietti-santos-b261a1159/"
@@ -72,9 +72,18 @@
         <h2>Sobre Mí</h2>
         <p>
           <span>Hola, soy Daniel FAMIGLIETTI</span> Desarrollador web entusiasta
-          y apasionado con una sólida formación en programación. Con 2 años de
-          experiencia en el desarrollo web, estoy comprometido en aprender y
-          crecer en este campo emocionante y en constante evolución.
+          y apasionado con una sólida formación en programación. Estoy
+          comprometido en aprender y crecer en este campo emocionante y en
+          constante evolución. Durante mi carrera, he trabajado en varios
+          proyectos donde he adquirido habilidades en el desarrollo fullstack
+          utilizando tecnologías como HTML, CSS , JavaScript, NodeJS, Gulp,
+          React,Sass ,bases de datos SQL, Java ,PHP y sistemas de control de
+          versiones Git y GitHub. He trabajado en la creación de sitios web
+          responsivos y amigables para dispositivos móviles. Estoy
+          constantemente buscando oportunidades para ampliar mis conocimientos y
+          aprender nuevas tecnologías. Mi enfoque principal es seguir creciendo
+          como desarrollador web y adquirir experiencia práctica en el
+          desarrollo de aplicaciones más complejas.
         </p>
 
         <div class="fila">
@@ -89,7 +98,7 @@
 
               <li>
                 <strong>Teléfono</strong>
-                622520037
+                +34 622 52 00 37
               </li>
               <li>
                 <strong>Email</strong>
@@ -151,7 +160,9 @@
           </div>
         </div>
         <button>
-          <a href="CV Daniel Famiglietti.pdf" download="mi-archivo.pdf"
+          <a
+            href="CV Daniel Famiglietti.pdf"
+            download="CV Daniel Famiglietti.pdf"
             >Descargar CV <i class="fa-solid fa-download"></i
           ></a>
           <span class="overlay"></span>
@@ -223,7 +234,7 @@
           </div>
           <!--Profesional Skill-->
           <div class="col">
-            <h3>Professional Skills</h3>
+            <h3>Soft Skills</h3>
             <div class="skill">
               <span>Comunicación</span>
               <div class="barra-skill">
@@ -270,7 +281,7 @@
             </div>
 
             <div class="skill">
-              <span>Resiliencia</span>
+              <span>Organización</span>
               <div class="barra-skill">
                 <div class="progreso">
                   <span>89%</span>
@@ -287,6 +298,27 @@
         <h2>Curriculum</h2>
         <div class="fila">
           <div class="col izquierda">
+            <h3>Experiencia Laboral</h3>
+            <div class="item izq">
+              <h4>Desarrollador Web</h4>
+              <span class="casa">Growi.fi</span>
+              <span fecha="fecha">Marzo 2024-Junio 2024</span>
+              <p>
+                Funciones: - Creación de páginas Web utilizando React. - Diseño
+                web centrado en la experiencia de usuario. - Conexión con Fetch
+                API, para conectar a la blockchain mediante la plataforma de
+                servicios en la nube QuickNode. - Uso básico de Git para control
+                de versiones. - Uso de JWT para autenticación segura de la
+                aplicación. - Participación en reuniones de equipo para la
+                planificación y revisión de proyectos. - Implementación de
+                funcionalidades nuevas usando React y corrección de errores bajo
+                la supervisión del desarrollador senior.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
             <h3>Educación</h3>
             <div class="item izq">
               <h4>Técnico Superior en Desarrollo de Aplicaciones Web</h4>
@@ -323,6 +355,18 @@
           <!--CURSOS-->
           <div class="col derecha">
             <h3>Cursos realizados</h3>
+            <div class="item der">
+              <h4>Cursos para desarrolladores certificados</h4>
+              <span class="casa">OpenWebinars</span>
+              <span fecha="fecha">Expedición:jun.2024</span>
+              <p>
+                Cursos finalizados, de las siguientes tecnologías:
+                Docker,TypeScript,MongoDB,Node JS, React, SQL
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
             <div class="item der">
               <h4>Responsive Web Desing</h4>
               <span class="casa">freeCodeCamp</span>
@@ -460,23 +504,40 @@
         <h2>CONTACTO</h2>
         <div class="fila">
           <!--Formulario-->
-          <div class="col">
-            <input type="text" placeholder="Tu Nombre" />
-            <input type="text" placeholder="Número telefónico" />
-            <input type="text" placeholder="Tu Dirección de correo" />
-            <input type="text" placeholder="Tema" />
+          <form
+            action="https://formsubmit.co/danielfamiglietti@hotmail.com"
+            method="POST"
+            class="col"
+          >
+            <input type="text" name="Nombre" placeholder="Tu Nombre" required />
+
+            <input
+              type="number"
+              name="Número telefónico"
+              placeholder="Número telefónico"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Tu Dirección de correo"
+              required
+            />
+            <input type="text" name="Tema" placeholder="Tema" required />
             <textarea
-              name=""
+              type="text"
+              name="Mensaje"
               id=""
               cols="30"
               rows="10"
               placeholder="Mensaje"
+              required
             ></textarea>
-            <button>
+            <button type="submit">
               Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
-          </div>
+          </form>
           <!--MAPA-->
           <div class="col">
             <img src="Cuatro_Caminos.png" alt="mapa" />
@@ -484,16 +545,16 @@
               <ul>
                 <li>
                   <i class="fa-sharp fa-solid fa-location-dot"></i>
-                  Cuatro Caminos,Madrid,España
+                  Cuatro Caminos, Madrid, España
                 </li>
                 <li>
                   <i class="fa-solid fa-mobile-screen"></i>
-                  Móvil:622520037
+                  Móvil: +34622520037
                 </li>
 
                 <li>
                   <i class="fa-solid fa-envelope"></i>
-                  Email:danielfamiglietti@hotmail.com
+                  Email: danielfamiglietti@hotmail.com
                 </li>
               </ul>
             </div>

@@ -44,3 +44,8 @@ function efectoHabilidades() {
 window.onscroll = function () {
   efectoHabilidades();
 };
+
+// función para que la página vuelva al inicio después de refrescar
+window.onload = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};

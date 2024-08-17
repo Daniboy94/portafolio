@@ -12,6 +12,12 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
 /* MENU */
 
 .contenedor-header {
@@ -127,6 +133,19 @@ html {
 
 .inicio .contenido-banner .redes a:hover {
   background-color: #1cb698;
+}
+
+.contenido-banner {
+  animation: aparecer 2.5s ease-in;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .sobremi {
@@ -717,12 +736,16 @@ html {
 .contacto .col img {
   width: 100%;
 }
+
+.info {
+  width: 75%;
+}
+
 .contacto .col .info {
   position: absolute;
   top: 40%;
   background-color: #252a2e;
   padding: 20px;
-  max-width: 350px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
