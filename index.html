@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <!-- Menu encabezado-->
+
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Daniel</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!--SECCION INICIO-->
+
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="fotoDaniel.jpeg" class="imagen" alt="foto" />
+        </div>
+
+        <h1>DANIEL FAMIGLIETTI</h1>
+        <h2>Desarrollador Web Full Stack</h2>
+        <div class="redes">
+          <a
+            href="https://www.linkedin.com/in/daniel-famiglietti-santos-b261a1159/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://github.com/Daniboy94" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-skype"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Daniel FAMIGLIETTI</span> Desarrollador web entusiasta
+          y apasionado con una sólida formación en programación. Con 2 años de
+          experiencia en el desarrollo web, estoy comprometido en aprender y
+          crecer en este campo emocionante y en constante evolución.
+        </p>
+
+        <div class="fila">
+          <!--datos personales-->
+          <div class="col">
+            <h3>Datos personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                14-02-1994
+              </li>
+
+              <li>
+                <strong>Teléfono</strong>
+                622520037
+              </li>
+              <li>
+                <strong>Email</strong>
+                danielfamiglietti@hotmail.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Madrid,España
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+          <!--intereses-->
+
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MÚSICA</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-brands fa-linux"></i>
+                <span>LINUX</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-futbol"></i>
+                <span>DEPORTE</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-sharp fa-solid fa-microchip"></i>
+                <span>Pc BUILDING</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-language"></i>
+                <span>IDIOMAS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-terminal"></i>
+                <span>CODING</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <a href="CV Daniel Famiglietti.pdf" download="mi-archivo.pdf"
+            >Descargar CV <i class="fa-solid fa-download"></i
+          ></a>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!--SECCION SKILSS-->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!--Technical Skill-->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Java</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Oracle-SQL</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>React</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Git</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profesional Skill-->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Trabajo en equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Resolución de problemas</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Resiliencia</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Técnico Superior en Desarrollo de Aplicaciones Web</h4>
+              <span class="casa">MEDAC</span>
+              <span fecha="fecha">2022-2024</span>
+              <p>Titulación: 9,33</p>
+              <p>
+                Aptitudes: JavaScript · Java · Python · PHP · HTML5 · Hojas de
+                estilos en cascada (CSS) · SQL · Oracle SQL Developer · XML ·
+                PL/SQL · Linux · Programación orientada a objetos (POO) ·
+                Bootstrap · GitHub · Git · Lenguaje de hojas de estilo LESS ·
+                Lenguaje SASS · PhpMyAdmin
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Técnico Superior en Idiomas Modernos</h4>
+              <span class="casa"
+                >Instituto Universitario Tecnológico Américo Vespucio</span
+              >
+              <span fecha="fecha">2014-2017</span>
+              <p>
+                Especialización en el idioma Inglés e Italiano. Capacidad
+                docente. Traducción de documentos.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <!--CURSOS-->
+          <div class="col derecha">
+            <h3>Cursos realizados</h3>
+            <div class="item der">
+              <h4>Responsive Web Desing</h4>
+              <span class="casa">freeCodeCamp</span>
+              <span fecha="fecha">Expedición:jun.2022</span>
+              <p>Curso completo de HTML|CSS|Javascript.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>
+                Curso Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y
+                MySQL.
+              </h4>
+              <span class="casa">Udemy</span>
+              <span fecha="fecha">Expedición:abril.2022</span>
+              <p>Curso de Desarrollo Web con las tecnologías más utilizadas.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>
+                Curso Introducción a Lenguaje de Programación Orientado a
+                Objetos Java, Teleformación (60h)
+              </h4>
+              <span class="casa">Fundación Confemetal</span>
+              <span fecha="fecha">Expedición:may.2020</span>
+              <p>Fundamentos del lenguaje de programación Java</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>
+                Google Actívate Introducción al Desarrollo Web I (40h),
+                Programación Informática
+              </h4>
+              <span class="casa">Google Actívate</span>
+              <span fecha="fecha">Expedición:may.2020</span>
+              <p>Fundamentos del Desarrollo Web</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>
+                Google Actívate Introducción al Desarrollo Web II (40h),
+                Programación Informática
+              </h4>
+              <span class="casa">Google Actívate</span>
+              <span fecha="fecha">Expedición:may.2020</span>
+              <p>Fundamentos del Desarrollo Web</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>
+                Nivel Marco común Europeo B2: inglés intermedio. Programa de
+                inglés como lengua extranjera
+              </h4>
+              <span class="casa">Centro Venezolano Americano</span>
+              <span fecha="fecha">Expedición:ene.2013</span>
+              <p>Estudios generales del idioma Inglés</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="p1.jpg" alt="foto1" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="p2.jpg" alt="foto1" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="p3.jpg" alt="foto1" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="p4.jpg" alt="foto1" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="p5.jpg" alt="foto1" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="p6.jpg" alt="foto1" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!--Formulario-->
+          <div class="col">
+            <input type="text" placeholder="Tu Nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Tu Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!--MAPA-->
+          <div class="col">
+            <img src="Cuatro_Caminos.png" alt="mapa" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>
+                  Cuatro Caminos,Madrid,España
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Móvil:622520037
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email:danielfamiglietti@hotmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+
+      <div class="redes">
+        <a
+          href="https://www.linkedin.com/in/daniel-famiglietti-santos-b261a1159/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/Daniboy94" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-skype"></i></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
