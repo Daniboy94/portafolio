@@ -772,11 +772,11 @@ footer {
   width: 100%;
 }
 
-footer .redes {
+footer .redes-footer {
   margin-bottom: 20px;
 }
 
-footer .redes a {
+footer .redes-footer a {
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -788,6 +788,10 @@ footer .redes a {
   margin: 40px 5px;
   font-size: 20px;
   transition: 0.3s;
+}
+
+.redes-footer a:hover {
+  background-color: #1cb698;
 }
 
 footer .arriba {
@@ -803,6 +807,15 @@ footer .arriba {
   border-radius: 50%;
   line-height: 50px;
   font-size: 18px;
+}
+
+.arriba {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.arriba:hover {
+  box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.6);
 }
 
 /* SeCCION RESPONSIVE */
@@ -880,4 +893,13 @@ footer .arriba {
   .contacto .fila .col {
     width: 100%;
   }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
